@@ -38,9 +38,9 @@ jobs:
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
           -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
           -Dsonar.junit.reportsPath=target/surefire-reports/
-          -Dsonar.jacoco.reportPaths=target/jacoco.exec
+          -Dsonar.jacoco.reportPath=target/jacoco.exec
           -Dsonar.checkstyle.reportPaths=target/checkstyle-result.xml
-          -Dsonar.java.binaries=target/test-classes/com/visualpathit/account
+          -Dsonar.java.binaries=target/test-classes/com/visualpathit/account/controllerTest/ 
 
       #check quality gate
 
