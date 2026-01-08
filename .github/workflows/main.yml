@@ -96,7 +96,6 @@ jobs:
 
       - name: Update kubeconfig
         id: getconfig
-        if: steps.apply.outcome == 'success'
         run: |
           mkdir -p /home/runner/.kube
           aws eks update-kubeconfig \
